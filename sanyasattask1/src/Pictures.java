@@ -1,0 +1,3 @@
+
+class Pictures extends File {}
+

@@ -1,0 +1,2 @@
+
+class Tulip extends Flower {}
