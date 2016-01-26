@@ -4,12 +4,12 @@ public class ExceptionInputOutput {
 
         System.out.println("Введите название цветов в букете: ");
         final Scanner scanner = new Scanner(System.in);
-        final String Bouquet = scanner.next(); /* переменную не очень подходящую (FlowerInput) заменяем
-         на более абстрактную (Bouquet) которая хранит значение строки
+        final String nameOfFlower = scanner.next(); /* переменную не очень подходящую (Bouquet) заменяем
+         на более абстрактную (nameOfFlower) которая хранит значение строки
          (название будущего букета из цветов) */
 
         try {
-            if (Bouquet.matches("[a-zA-Z ]*\\d+.*")) {
+            if (nameOfFlower.matches("[a-zA-Z ]*\\d+.*")) {
                 throw new IllegalArgumentException("Error: Ввод цифр не приветствуется! ");
             }
 
